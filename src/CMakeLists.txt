@@ -24,9 +24,7 @@ file(GLOB_RECURSE System System/* Platform/Linux/System/*)
 endif()
 file(GLOB_RECURSE Transfers Transfers/*)
 file(GLOB_RECURSE Wallet Wallet/*)
-file(GLOB_RECURSE WalletLegacy WalletLegacy/*)
-
-file(GLOB_RECURSE JsonRpcServer JsonRpcServer/*)
+file(GLOB_RECURSE WalletLegacy WalletLegacy/*)file(GLOB_RECURSE JsonRpcServer JsonRpcServer/*)
 
 file(GLOB_RECURSE PaymentGate PaymentGate/*)
 file(GLOB_RECURSE PaymentGateService PaymentGateService/*)
@@ -77,7 +75,7 @@ add_dependencies(P2P version)
 
 set_property(TARGET ConnectivityTool PROPERTY OUTPUT_NAME "connectivity_tool")
 set_property(TARGET SimpleWallet PROPERTY OUTPUT_NAME "simplewallet")
-set_property(TARGET PaymentGateService PROPERTY OUTPUT_NAME "walletd")
+set_property(TARGET PaymentGateService PROPERTY OUTPUT_NAME "twitsd")
 set_property(TARGET Miner PROPERTY OUTPUT_NAME "miner")
 #TODO Specify the name of daemon for your currency
 set_property(TARGET Daemon PROPERTY OUTPUT_NAME "cryptonoted")
